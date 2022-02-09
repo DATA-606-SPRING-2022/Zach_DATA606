@@ -18,7 +18,7 @@ The questions I have in mind are what areas, styles, and features of the home co
 
 I plan to get the data from a real estate agent, a family member has dumped housing data for me to be able to analyze.  I put an example file in the data directory of the repo below.  The data contains fields such as category, list date, off market date, settlement date, original price, list price, sold price, address including city, state, and zip, county, school district, acres total, whether its a house for older persons, condo association, homeowners association, age, square footage, style, number of floors, whether it has a basement, garage spaces, fireplace, waterfront, new construction, number of bedrooms, and number of bathrooms among other things.  It is credible striaght from the real estate agent's dump of it, of high quality and consistent, and contains thousands of rows (not sure how many yet, will have to get more data from the agent.
 
-Data example here: 
+Data example here: [Data Example](https://github.com/zvance1/Zach_DATA606/tree/main/data)
 
 ### What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?
 
