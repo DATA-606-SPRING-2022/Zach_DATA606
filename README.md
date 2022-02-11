@@ -1,4 +1,4 @@
-# DATA 606 Capstone Project - Draft Proposal
+# DATA 606 Capstone Project - Proposal
 
 # Predicting Maryland Home Prices and Finding their Value
 
