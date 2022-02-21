@@ -75,7 +75,7 @@ Like I mentioned previously, I plan to test the predicted price against the sold
 
 I want to achieve a combination of all of those outcomes.  I think the overarching problem of everything mentioned here is how best to find the most value in homes for perspective home buyers.  Via the predicting of home prices I can perform predictive analytics while using the results to gain a better understanding of the problem.  I'll be able to visualize which factors of the home have the biggest effect on its cost.  Another thing I think I will find is that there may be plenty of error, different people place different values on homes and the sale price may not be a 100% good true value number.  There may also be factors that are not be captured well in the data such as the current condition of the home, whether it has well water or public, and so on.  What I'm creating is a tool to help solve the problem, and I think gaining a better understanding of the problem by running predictive analytics accomplishes that goal and I, as well as anyone reading this will learn a lot about home values and key factors involved.
 
-# Project Structure
+### Project Structure
 
 Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/data)
 
