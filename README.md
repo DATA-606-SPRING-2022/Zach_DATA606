@@ -78,9 +78,14 @@ I want to achieve a combination of all of those outcomes.  I think the overarchi
 # Project Structure
 
 Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/data)
+
 Data accumulated into one file: [Appended Data](https://github.com/zvance1/Zach_DATA606/tree/main/appended_data)
+
 Cleaned Data here: [Cleaned Data](https://github.com/zvance1/Zach_DATA606/tree/main/cleaned_data)
+
 Python Scripts to append and clean the data: [Python Cleaning Scripts](https://github.com/zvance1/Zach_DATA606/tree/main/python_cleaning_scripts)
+
 Python exploratory data analysis scripts here: [Python EDA Scripts](https://github.com/zvance1/Zach_DATA606/tree/main/python_eda_scripts)
+
 
 
