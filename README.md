@@ -36,7 +36,7 @@ A family member real estate agent dumped housing data for me to be able to analy
   - list price
   - sold price
   - address 
-    * including city
+    * city
     * state
     * zip
     * county
