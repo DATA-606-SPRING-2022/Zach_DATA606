@@ -88,4 +88,9 @@ Python Scripts to append and clean the data: [Python Cleaning Scripts](https://g
 Python exploratory data analysis scripts here: [Python EDA Scripts](https://github.com/zvance1/Zach_DATA606/tree/main/python_eda_scripts)
 
 
+### Current Status and Initial EDA Results
+I haven't had the most time for this since class ended on Wednesday, I anticipate spedning more time on it in the coming week.  I had not written any code prior to class ending Wednesday so I have successfully read it in and appended it together, also confirmed with the real estate agent that the data is good to be public.  I need to do more on cleaning the data, I ran pandas profiling on it and every column contains null values so I'll need to find ways to deal with them.  I also need to clean up the types, where I want dollar values coming in as integers rather than strings.  I began writing queries in the eda jupyter notebook that I setup and was running into issues with my queries.  I think most likely because of the types when reading in the data, I need to clean it better first.  Definitely progress made, and I think a lot more progress will be made in the next week.
+
+
+
 
