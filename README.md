@@ -70,7 +70,7 @@ In my intial EDA analysis I have used pyspark to query the data in order to answ
 
 Begining with the question of whether or not home prices have gone up faster in certain areas over others:
 
-![PricePerCountyPerMonth](https://github.com/zvance1/Zach_DATA606/tree/main/Images/PricePerCountyPerMonth.png)
+![PricePerCountyPerMonth](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCountyPerMonth.png?raw=true)
 
 
 ### Structure of Analysis
