@@ -59,7 +59,9 @@ A family member real estate agent dumped housing data for me to be able to analy
 
 Among other attributes as well.  It is credible, straight from the real estate agent's dump of it, of high quality and consistent. 
 
-Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/data)
+Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/RawData)
+
+Cleaned Data: [Cleaned Data Sets](https://github.com/zvance1/Zach_DATA606/tree/main/CleanedData)
 
 My unit of analysis will be individual homes.  Again, targeting Anne Arundel, Harford, Baltimore, and Howard counties for historical anlysis and future predictions.
 
