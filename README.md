@@ -9,22 +9,6 @@ This project is to create a model on predicting home prices in Maryland, more sp
 
 The issue is important to me as a first time home buyer because there are so many things to consider and weighing the decisions is difficult to do.  I think seeing the price differential between homes in certain areas, certain styles, and with different features will give me a better understanding of where exactly the value in a home comes from and what areas, styles, and features are most costly.  I and many other home buyers, in our heads, place different values on different features of a home and need ot understand what that means in terms of our budget.  For example if I really want to live waterfront, how much does that cost vs a new construction home not on the water and with 1,000 more square feet than I'd have in the waterfront home?  From that I can better determine if I think the cost of living on the water is worth it in comparison to a nicer home not on the water for the same budget.  I can also uncover things like whether or not waterfront homes appreciate faster, and maybe that helps me feel more comfortable with the purchase of the waterfront home if I decide I value that more.  All in all, uncovering facts like this and being able to weigh the different features of a house more effectively is important to me and anyone else buying a home.  A finding such as waterfront homes appreciating faster, and in a certain area would also prove very useful to investors looking to profit from appreciation.  I think if I found time for it as well, like I mentioned above, if I could make a model that takes in a weight for each feature the buyer values and their budget and outputs the list of houses that offer them the best value in descending order that would prove extremely useful.
 
-### Questions to be Answered
-
-The biggest question I'd like to answer is what areas, styles, and features of the home cost the most, and based on that what homes then offer the most value for their cost?  I think a lot of people try to make a decision that offers them the best value for their money.  With that, they would be very interested to the answer to the question about how to find the most value to them in the home that they buy.  Below is a summary of the questions to answer:
-
-Key question to answer:
-  - What impacts the price the most?  With an ranking of features that have the largest impact on price.
-
-Exploratory Questions:
-  - Have home prices gone up faster in certain areas over others?
-  - Has the number of acres for new construction homes gone down over time?
-  - Is there more new construction in certain areas?
-  - Did homes tend to go more above or below listing price during any specific time period?
-  - How much do waterfront homes cost in comparison to non-waterfront?
-  - How much does new construction cost in comparison to non new construction?
-
-
 ### About the Data
 
 A family member real estate agent dumped housing data for me to be able to analyze.  The raw data I put an example file in the data directory of the repo below.  The max the real estate agent could dump was 5,000 rows per file, so I have 20 total files, containing a cumulative 90,758 homes of which were sold in the counties of Anne Arundel, Harford, Baltimore and Howard over the last 5 years.  The data contains fields such as:
@@ -65,6 +49,30 @@ Cleaned Data: [Cleaned Data Sets](https://github.com/zvance1/Zach_DATA606/tree/m
 
 My unit of analysis will be individual homes.  Again, targeting Anne Arundel, Harford, Baltimore, and Howard counties for historical anlysis and future predictions.
 
+### Questions to be Answered
+
+The biggest question I'd like to answer is what areas, styles, and features of the home cost the most, and based on that what homes then offer the most value for their cost?  I think a lot of people try to make a decision that offers them the best value for their money.  With that, they would be very interested to the answer to the question about how to find the most value to them in the home that they buy.  Below is a summary of the questions to answer:
+
+Key question to answer:
+  - What impacts the price the most?  With an ranking of features that have the largest impact on price.
+
+Exploratory Questions:
+  - Have home prices gone up faster in certain areas over others?
+  - Has the number of acres for new construction homes gone down over time?
+  - Is there more new construction in certain areas?
+  - Did homes tend to go more above or below listing price during any specific time period?
+  - How much do waterfront homes cost in comparison to non-waterfront?
+  - How much does new construction cost in comparison to non new construction?
+  
+### Initial EDA Analysis
+
+In my intial EDA analysis I have used pyspark to query the data in order to answer the desired questions.
+
+Begining with the question of whether or not home prices have gone up faster in certain areas over others:
+
+![PricePerCountyPerMonth](https://github.com/zvance1/Zach_DATA606/tree/main/Images/PricePerCountyPerMonth.png)
+
+
 ### Structure of Analysis
 
 I plan to use the sold price as the actual price of the house to be predicted and use a combination of mostly all of the attributes listed above to try to predict that value, trying different things and seeing which of them are more significant than others.  In exploratory analysis I plan on using some of those attributes in combination with each other, for example, to answer the question of whether or not homes were selling above asking price more so for a certain time than other times, I group by month, and take the average selling price - asking price per month then graph the result to see the answer to the question.
@@ -79,15 +87,17 @@ I want to achieve a combination of all of those outcomes.  I think the overarchi
 
 ### Project Structure
 
-Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/data)
+Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/RawData)
 
-Data accumulated into one file: [Appended Data](https://github.com/zvance1/Zach_DATA606/tree/main/appended_data)
+Cleaned Data here: [Cleaned Data](https://github.com/zvance1/Zach_DATA606/tree/main/CleanedData)
 
-Cleaned Data here: [Cleaned Data](https://github.com/zvance1/Zach_DATA606/tree/main/cleaned_data)
+Images here: [Images](https://github.com/zvance1/Zach_DATA606/tree/main/Images)
 
-Python Scripts to append and clean the data: [Python Cleaning Scripts](https://github.com/zvance1/Zach_DATA606/tree/main/python_cleaning_scripts)
+Python Jupyter Notebooks: [Python Jupyter Notebooks](https://github.com/zvance1/Zach_DATA606/tree/main/Notebooks)
 
-Python exploratory data analysis scripts here: [Python EDA Scripts](https://github.com/zvance1/Zach_DATA606/tree/main/python_eda_scripts)
+Presentations: [Presentations](https://github.com/zvance1/Zach_DATA606/tree/main/Presentations)
+
+Reports (HTML from Pandas): [Presentations](https://github.com/zvance1/Zach_DATA606/tree/main/Reports)
 
 
 ### Current Status and Initial EDA Results
