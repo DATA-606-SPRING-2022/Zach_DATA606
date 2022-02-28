@@ -111,7 +111,7 @@ Python Jupyter Notebooks: [Python Jupyter Notebooks](https://github.com/zvance1/
 
 Presentations: [Presentations](https://github.com/zvance1/Zach_DATA606/tree/main/Presentations)
 
-Reports (HTML from Pandas): [Presentations](https://github.com/zvance1/Zach_DATA606/tree/main/Reports)
+Reports (HTML from Pandas): [Pandas Profiling Reports](https://github.com/zvance1/Zach_DATA606/tree/main/Reports)
 
 
 ### Current Status and Initial EDA Results
