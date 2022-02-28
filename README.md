@@ -72,6 +72,20 @@ Begining with the question of whether or not home prices have gone up faster in 
 
 ![PricePerCountyPerMonth](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCountyPerMonth.png?raw=true)
 
+From the above chart we can easily see that Howard county is the most expensive, followed by Anne Arundel, then by both Harford and Baltimore being similar price levels.  Interestingly, the price movements up and down seem to follow the same trend over the course of the year.  As the proce in Howard goes up towards the summer months, so does the price in Anne Arundel and the other counties, at about the same rate as well.
+
+![PricePerCountyPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCountyPerYear.png?raw=true)
+
+From the above chart we can easily see the upward trend in the cost of house prices over the years.  We see again the same ordering of price levels of the 4 counties and increases at similar rates.  Home prices look to have peaked in 2021 and have so far leveled off or decreased slightly so far into 2022.
+
+![PricePerCityInHarfordPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCityInHarfordPerYear.png?raw=true)
+
+Breaking the data down even further, we can query by city inside of each County, it is easier to graph on a chart like this if we look more specifically at certain cities we are interested in as there are just too many to put on one chart and for it to be legible.  Another concern with this is that when the data is at a level this low and we are usign the average, an outlier has more potential to throw off the results.  For instance, prices in Churchville look to have skyrockets going into 2021, that could be due to a couple outliers or there could be another reason - and that is something to look into further.
+
+![PricePerCityInAnneArundelWaterfrontPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCityInAnneArundelWaterfrontPerYear.png?raw=true)
+
+With being interested in waterfront property myself in Anne Arundel county it is helpful for me to see where the most affordable waterfront property is, and how prices for it have trended over the last 5 years.  Hanover looks to be the most affordable, and to have stayed relatively flat over the years, which may be good for a lower price purchasing the land, but also hinders the outlook as an investment and looking to gain the most possible from appreciation of the property.
+
 
 ### Structure of Analysis
 
