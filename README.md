@@ -58,11 +58,11 @@ Key question to answer:
 
 Exploratory Questions:
   - Have home prices gone up faster in certain areas over others?
-  - Has the number of acres for new construction homes gone down over time?
-  - Is there more new construction in certain areas?
-  - Did homes tend to go more above or below listing price during any specific time period?
   - How much do waterfront homes cost in comparison to non-waterfront?
+  - Has the number of acres for new construction homes gone down over time?
   - How much does new construction cost in comparison to non new construction?
+  - Did homes tend to go more above or below listing price during any specific time period?
+  - Is there more new construction in certain areas?
   
 ### Initial EDA Analysis
 
@@ -85,6 +85,26 @@ Breaking the data down even further, we can query by city inside of each County,
 ![PricePerCityInAnneArundelWaterfrontPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCityInAnneArundelWaterfrontPerYear.png?raw=true)
 
 With being interested in waterfront property myself in Anne Arundel county it is helpful for me to see where the most affordable waterfront property is, and how prices for it have trended over the last 5 years.  Hanover looks to be the most affordable, and to have stayed relatively flat over the years, which may be good for a lower price purchasing the land, but also hinders the outlook as an investment and looking to gain the most possible from appreciation of the property.
+
+![medianPricePerWaterfrontPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontPerCounty.png?raw=true)
+
+Looking at the above chart, it is clear that Anne Arundel County waterfront homes look to have increased pretty dramatically from 2019 to 2021.  When looking at 2022, I would engourage to see it as valuable information but at the same time not to the same extent as the other years as there is not as much data for it only two months into the year (Howard hasn't had any waterfront home sales yet this year).  In Anne Arundel county, the price difference between the medians of waterfront and non waterfront is also pretty significant with the median for non waterfront being down around 400k and waterfront up over 1 million.  The cheapest is non waterfront in Baltimore county, and the difference between waterfront and non waterfront in Baltimore county is not as significant.  Waterfront is consistently more expensive than non waterfront in all of the counties, but to different degrees.
+
+![medianAcresPerNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianAcresPerNewConstructionPerCounty.png?raw=true)
+
+In the above chart we see that there has been a sligh downward trend in the size of new construction lots, more steadily for Anne Arundel and Baltimore counties.  The median in those counties has stayed in the 0.2 acre range, and that is already really small so it makes sense that the downward trend has only been slight - it is tough to get much smaller than that.  Interestingly, Howard, which we saw as the most expensive, and Harford, which we saw as the least expensive alongside Baltimore County look to have their new construction lot sizes be slightly larger, and the downward trend is not as clear or evident for those counties.  Howard and Harford counties have more land, so it will be interesting to see where the price difference between the two comes from whether it be mainly rooted in location or if homes in Howard tend to be larger than that of Harford.  For Howard, in 2022, there have only been 5 new construction home sales, 3 of which were 1 acre lots, the other 2 being 0.14 and 0.24 acres, so I'd expect that as we get further into 2022 that number come down.  Harford and Howard also have a lesser volume of homes than Anne Arundel and Baltimore counties, making their numbers less consistent.
+
+![medianPricePerNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionPerCounty.png?raw=true)
+
+Here we see that new construction is consistently more expensive than non new construction in each and every county, to different degrees in each county.  Again Baltimore, non new construction shows as the cheapest option and we see Howard new construction as the most expensive option.  This is consistent with the overall average prices we saw per county earlier in the analysis and the same general increase in prices across the board.
+
+![avgSoldPriceMinusListPrice](https://github.com/zvance1/Zach_DATA606/blob/main/Images/avgSoldPriceMinusListPrice.png?raw=true)
+
+Looking at the above figure we see that the housing market had become much more of a sellers market as of recently.  Up until 2020 homes were selling for under their list price, then with markets becoming more competitive in 2020 with the development of the COVID-19 pandemic, residential homes have been selling at or above their list price.  So, clearly, home price is dependent on more than just the features of the house - it depends on world events and market fluctuation.
+
+![countOfNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/countOfNewConstructionPerCounty.png?raw=true)
+
+Comparatively, the count of new construction homes looks to be favored in Anne Arundel - it has the most new construction homes and the counts of new construction there have increased over the years.  The least amount is between Harford and Howard.  New construction decreased slightly across the board in 2021 in the midst of the COVID-19 pandemic and has consistently decreased gradually in Howard county.  2022 is low again because it is not a full years worth of data.
 
 
 ### Structure of Analysis
@@ -114,8 +134,8 @@ Presentations: [Presentations](https://github.com/zvance1/Zach_DATA606/tree/main
 Reports (HTML from Pandas): [Pandas Profiling Reports](https://github.com/zvance1/Zach_DATA606/tree/main/Reports)
 
 
-### Current Status and Initial EDA Results
+### Current Status
 
-I feel I have made good progress on this in the past week.  I have the project structured in a good way, have the files relatively well documented, have the data read in, defined the schema, created pandas profiling reports that I used to clean the data and take some notes on how I anticipate using some of the columns that could be questionable but I decided to keep for now, cleaned the data and its types so that I could more easily work with it, and began querying it with pyspark sql while using matplotlib to create some visualizations to answer EDA questions.  I have focused on the first question, and anticipate now that I have all of this setup I can pretty quickly query whatever I want and make a visualization out of it.  So, in the next week I plan on spending more time querying different things in support of the EDA questions I listed to find the answers.  I created the initial powerpoint presentation and plan to enhance it in the next week with further EDA findings before recording the video.
+I feel I have again made good progress on this in the past week.  I added a bunch more EDA analysis and have answered all 6 of the questions that I had listed.  I can further improve on this EDA in the next week by potentially converting counts into percentages to get a better sense of whether certain areas have more new construction, respectively.  I also wouldn't mind creating a correlation matrix between the variables to see if there are any that are highly coordinated before I get into the machine learning in the next phase.
 
 
