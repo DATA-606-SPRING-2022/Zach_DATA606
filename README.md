@@ -3,6 +3,9 @@
 # Predicting Maryland Home Prices and Finding their Value
 
 
+Initial Presentation here: [EDA V1.2 Presentation](https://youtu.be/M-Pc2erqVoM)
+
+
 ### Background Information
 
 This project is to create a model on predicting home prices in Maryland, more specifically in Anne Arundel, Harford, Baltimore, and Howard counties.  I also have an interest in finding a way to place weights on the values of certain homes based on a buyers preferences, if time permits me to do so.  In today's very competitive market, it is difficult for first time home buyers like myself to jump into.  I'm planning on purchasing a home in 2023 and a model like this could prove valuable to me and all the others buying a home in the next year.  Prices are high and so are desires for a home, so a model in finding homes that are undervalued or offer the most based on a buyer's preferences gives the buyer the best house for their money.  Buying a home is one of the biggest purchases people will make in their life, making it a tough decision.  The model I'd like to create I feel would give the home buyer more confidence in their decision that they are getting a good value thus making it easier for them to know what they want, at what price, and be able to make an offer quickly and confidently.  Investors may also be interested in this model as it relates to finding value in certain properties that are good for positive cash flow based on its features.
@@ -57,12 +60,13 @@ Key question to answer:
   - What impacts the price the most?  With an ranking of features that have the largest impact on price.
 
 Exploratory Questions:
+  - What is the best month to buy a house in?
   - Have home prices gone up faster in certain areas over others?
   - How much do waterfront homes cost in comparison to non-waterfront?
   - Has the number of acres for new construction homes gone down over time?
   - How much does new construction cost in comparison to non new construction?
-  - Did homes tend to go more above or below listing price during any specific time period?
   - Is there more new construction in certain areas?
+  - Did homes tend to go more above or below listing price during any specific time period?
   
 ### Initial EDA Analysis
 
@@ -72,7 +76,7 @@ Begining with the question of whether or not home prices have gone up faster in 
 
 ![PricePerCountyPerMonth](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCountyPerMonth.png?raw=true)
 
-From the above chart we can easily see that Howard county is the most expensive, followed by Anne Arundel, then by both Harford and Baltimore being similar price levels.  Interestingly, the price movements up and down seem to follow the same trend over the course of the year.  As the proce in Howard goes up towards the summer months, so does the price in Anne Arundel and the other counties, at about the same rate as well.
+From the above chart we can easily see that Howard county is the most expensive, followed by Anne Arundel, then by both Harford and Baltimore being similar price levels.  Interestingly, the price movements up and down seem to follow the same trend over the course of the year.  As the price in Howard goes up towards the summer months, so does the price in Anne Arundel and the other counties, at about the same rate as well.  Based on this visualization it seems that prices for houses are the lowest in February and March of each year.
 
 ![PricePerCountyPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCountyPerYear.png?raw=true)
 
@@ -92,19 +96,19 @@ Looking at the above chart, it is clear that Anne Arundel County waterfront home
 
 ![medianAcresPerNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianAcresPerNewConstructionPerCounty.png?raw=true)
 
-In the above chart we see that there has been a sligh downward trend in the size of new construction lots, more steadily for Anne Arundel and Baltimore counties.  The median in those counties has stayed in the 0.2 acre range, and that is already really small so it makes sense that the downward trend has only been slight - it is tough to get much smaller than that.  Interestingly, Howard, which we saw as the most expensive, and Harford, which we saw as the least expensive alongside Baltimore County look to have their new construction lot sizes be slightly larger, and the downward trend is not as clear or evident for those counties.  Howard and Harford counties have more land, so it will be interesting to see where the price difference between the two comes from whether it be mainly rooted in location or if homes in Howard tend to be larger than that of Harford.  For Howard, in 2022, there have only been 5 new construction home sales, 3 of which were 1 acre lots, the other 2 being 0.14 and 0.24 acres, so I'd expect that as we get further into 2022 that number come down.  Harford and Howard also have a lesser volume of homes than Anne Arundel and Baltimore counties, making their numbers less consistent.
+In the above chart we see that there has been a slight downward trend in the size of new construction lots, more steadily for Anne Arundel and Baltimore counties.  The median in those counties has stayed in the 0.2 acre range, and that is already really small so it makes sense that the downward trend has only been slight - it is tough to get much smaller than that.  Interestingly, Howard, which we saw as the most expensive, and Harford, which we saw as the least expensive alongside Baltimore County look to have their new construction lot sizes be slightly larger, and the downward trend is not as clear or evident for those counties.  Howard and Harford counties have more land, so it will be interesting to see where the price difference between the two comes from whether it be mainly rooted in location or if homes in Howard tend to be larger than that of Harford.  For Howard, in 2022, there have only been 5 new construction home sales, 3 of which were 1 acre lots, the other 2 being 0.14 and 0.24 acres, so I'd expect that as we get further into 2022 that number come down.  Harford and Howard also have a lesser volume of homes than Anne Arundel and Baltimore counties, making their numbers less consistent.
 
 ![medianPricePerNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionPerCounty.png?raw=true)
 
 Here we see that new construction is consistently more expensive than non new construction in each and every county, to different degrees in each county.  Again Baltimore, non new construction shows as the cheapest option and we see Howard new construction as the most expensive option.  This is consistent with the overall average prices we saw per county earlier in the analysis and the same general increase in prices across the board.
 
-![avgSoldPriceMinusListPrice](https://github.com/zvance1/Zach_DATA606/blob/main/Images/avgSoldPriceMinusListPrice.png?raw=true)
-
-Looking at the above figure we see that the housing market had become much more of a sellers market as of recently.  Up until 2020 homes were selling for under their list price, then with markets becoming more competitive in 2020 with the development of the COVID-19 pandemic, residential homes have been selling at or above their list price.  So, clearly, home price is dependent on more than just the features of the house - it depends on world events and market fluctuation.
-
 ![countOfNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/countOfNewConstructionPerCounty.png?raw=true)
 
 Comparatively, the count of new construction homes looks to be favored in Anne Arundel - it has the most new construction homes and the counts of new construction there have increased over the years.  The least amount is between Harford and Howard.  New construction decreased slightly across the board in 2021 in the midst of the COVID-19 pandemic and has consistently decreased gradually in Howard county.  2022 is low again because it is not a full years worth of data.
+
+![avgSoldPriceMinusListPrice](https://github.com/zvance1/Zach_DATA606/blob/main/Images/avgSoldPriceMinusListPrice.png?raw=true)
+
+Looking at the above figure we see that the housing market had become much more of a sellers market as of recently.  Up until 2020 homes were selling for under their list price, then with markets becoming more competitive in 2020 with the development of the COVID-19 pandemic, residential homes have been selling at or above their list price.  This can imply that home price is dependent on more than just the features of the house - it depends on world events and market fluctuation.  So far into 2022 the average differenc ehas come down in 3 of the 4 counties, only going up in Harford.
 
 
 ### Structure of Analysis
