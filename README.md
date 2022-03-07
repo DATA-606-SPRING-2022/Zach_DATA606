@@ -82,14 +82,6 @@ From the above chart we can easily see that Howard county is the most expensive,
 
 From the above chart we can easily see the upward trend in the cost of house prices over the years.  We see again the same ordering of price levels of the 4 counties and increases at similar rates.  Home prices look to have peaked in 2021 and have so far leveled off or decreased slightly so far into 2022.
 
-![PricePerCityInHarfordPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCityInHarfordPerYear.png?raw=true)
-
-Breaking the data down even further, we can query by city inside of each County, it is easier to graph on a chart like this if we look more specifically at certain cities we are interested in as there are just too many to put on one chart and for it to be legible.  Another concern with this is that when the data is at a level this low and we are usign the average, an outlier has more potential to throw off the results.  For instance, prices in Churchville look to have skyrockets going into 2021, that could be due to a couple outliers or there could be another reason - and that is something to look into further.
-
-![PricePerCityInAnneArundelWaterfrontPerYear](https://github.com/zvance1/Zach_DATA606/blob/main/Images/PricePerCityInAnneArundelWaterfrontPerYear.png?raw=true)
-
-With being interested in waterfront property myself in Anne Arundel county it is helpful for me to see where the most affordable waterfront property is, and how prices for it have trended over the last 5 years.  Hanover looks to be the most affordable, and to have stayed relatively flat over the years, which may be good for a lower price purchasing the land, but also hinders the outlook as an investment and looking to gain the most possible from appreciation of the property.
-
 ![medianPricePerWaterfrontPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontPerCounty.png?raw=true)
 
 Looking at the above chart, it is clear that Anne Arundel County waterfront homes look to have increased pretty dramatically from 2019 to 2021.  When looking at 2022, I would engourage to see it as valuable information but at the same time not to the same extent as the other years as there is not as much data for it only two months into the year (Howard hasn't had any waterfront home sales yet this year).  In Anne Arundel county, the price difference between the medians of waterfront and non waterfront is also pretty significant with the median for non waterfront being down around 400k and waterfront up over 1 million.  The cheapest is non waterfront in Baltimore county, and the difference between waterfront and non waterfront in Baltimore county is not as significant.  Waterfront is consistently more expensive than non waterfront in all of the counties, but to different degrees.
