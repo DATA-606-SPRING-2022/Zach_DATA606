@@ -132,6 +132,6 @@ Reports (HTML from Pandas): [Pandas Profiling Reports](https://github.com/zvance
 
 ### Current Status
 
-I feel I have again made good progress on this in the past week.  I added a bunch more EDA analysis and have answered all 6 of the questions that I had listed.  I can further improve on this EDA in the next week by potentially converting counts into percentages to get a better sense of whether certain areas have more new construction, respectively.  I also wouldn't mind creating a correlation matrix between the variables to see if there are any that are highly coordinated before I get into the machine learning in the next phase.
+I feel I have again made good progress on this in the past week.  I added a bunch more EDA analysis and have answered all 7 of the questions that I had listed.  I can further improve on this EDA in the next week by potentially converting counts into percentages to get a better sense of whether certain areas have more new construction, respectively.  I also wouldn't mind creating a correlation matrix between the variables to see if there are any that are highly coordinated before I get into the machine learning in the next phase.
 
 
