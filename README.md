@@ -1,20 +1,20 @@
-# DATA 606 Capstone Project - Proposal
+# DATA 606 Capstone Project
 
 # Predicting Maryland Home Prices and Finding their Value
 
 
-Initial Presentation here: [EDA V1.2 Presentation](https://youtu.be/M-Pc2erqVoM)
+Recorded Presentation: [Recorded Presentation](https://youtu.be/M-Pc2erqVoM)
 
 
 ### Background Information
 
-This project is to create a model on predicting home prices in Maryland, more specifically in Anne Arundel, Harford, Baltimore, and Howard counties.  I also have an interest in finding a way to place weights on the values of certain homes based on a buyers preferences, if time permits me to do so.  In today's very competitive market, it is difficult for first time home buyers like myself to jump into.  I'm planning on purchasing a home in 2023 and a model like this could prove valuable to me and all the others buying a home in the next year.  Prices are high and so are desires for a home, so a model in finding homes that are undervalued or offer the most based on a buyer's preferences gives the buyer the best house for their money.  Buying a home is one of the biggest purchases people will make in their life, making it a tough decision.  The model I'd like to create I feel would give the home buyer more confidence in their decision that they are getting a good value thus making it easier for them to know what they want, at what price, and be able to make an offer quickly and confidently.  Investors may also be interested in this model as it relates to finding value in certain properties that are good for positive cash flow based on its features.
+This project is to create a model on predicting home prices in Maryland, more specifically in Anne Arundel, Harford, Baltimore, and Howard counties.  In today's very competitive market, it is difficult for first time home buyers like myself to jump into.  Prices are high and so are desires for a home, so a model in finding homes that are undervalued or offer the most based on a buyer's preferences gives the buyer confidence that they are getting the best house for their money.  With that, they can better know what they want, at what price it will take to get what they want, and be able to make an offer quickly and confidently when their dream home is on the market.  Buying a home is one of the biggest purchases people make in their life, and thus making the correct decision is important and comforting.  Investors should also be interested in this model as it relates to finding value in certain properties that are good for positive cash flow based on its features.
 
-The issue is important to me as a first time home buyer because there are so many things to consider and weighing the decisions is difficult to do.  I think seeing the price differential between homes in certain areas, certain styles, and with different features will give me a better understanding of where exactly the value in a home comes from and what areas, styles, and features are most costly.  I and many other home buyers, in our heads, place different values on different features of a home and need ot understand what that means in terms of our budget.  For example if I really want to live waterfront, how much does that cost vs a new construction home not on the water and with 1,000 more square feet than I'd have in the waterfront home?  From that I can better determine if I think the cost of living on the water is worth it in comparison to a nicer home not on the water for the same budget.  I can also uncover things like whether or not waterfront homes appreciate faster, and maybe that helps me feel more comfortable with the purchase of the waterfront home if I decide I value that more.  All in all, uncovering facts like this and being able to weigh the different features of a house more effectively is important to me and anyone else buying a home.  A finding such as waterfront homes appreciating faster, and in a certain area would also prove very useful to investors looking to profit from appreciation.  I think if I found time for it as well, like I mentioned above, if I could make a model that takes in a weight for each feature the buyer values and their budget and outputs the list of houses that offer them the best value in descending order that would prove extremely useful.
+Many benefits come out of the exploratory data analysis as well as the final model.  Seeing the price differential between homes in certain areas, certain styles, and with different features gives a better understanding of where exactly the value in a home comes from and what areas, styles, and features are most costly.  Home buyers, in their heads, place different values on different features of a home and need to understand what that means in terms of their budget.  For example if the buyer really wants to live waterfront, how much does that cost vs a new construction home not on the water and with 1,000 more square feet than the waterfront home would have?  From that the buyer can better determine if they think the cost of living on the water is worth it in comparison to a nicer home not on the water for the same budget.  The project also uncovers things like whether or not waterfront homes appreciate faster, and maybe that helps them feel more comfortable with the purchase of the waterfront home if decided that the buyer values that more.  All in all, uncovering facts like this and being able to weigh the different features of a house more effectively is important to prospective home buyers and investors.
 
 ### About the Data
 
-A family member real estate agent dumped housing data for me to be able to analyze.  The raw data I put an example file in the data directory of the repo below.  The max the real estate agent could dump was 5,000 rows per file, so I have 20 total files, containing a cumulative 90,758 homes of which were sold in the counties of Anne Arundel, Harford, Baltimore and Howard over the last 5 years.  The data contains fields such as:
+The data used here comes straight from a dump of a local Real Estate Agent from the MLS (Multiple Listing Service) software.  The max the real estate agent could dump was 5,000 rows per file, so I have 20 total files, containing a cumulative 90,758 homes of which were sold in the counties of Anne Arundel, Harford, Baltimore and Howard over the last 5 years.  The data contains fields such as:
   - category
   - list date
   - off market date
@@ -36,21 +36,21 @@ A family member real estate agent dumped housing data for me to be able to analy
   - square footage
   - style
   - number of floors
-  - whether or not it has a basement
+  - whether it has a basement
   - garage spaces
   - fireplace
   - waterfront
-  - whether or not it is new construction
+  - whether it is new construction
   - number of bedrooms
   - number of bathrooms
 
-Among other attributes as well.  It is credible, straight from the real estate agent's dump of it, of high quality and consistent. 
+Among other attributes as well.  It is credible as it is straight from the Real Estate Agent, relatively clean / consistent but does have some missing values.
 
 Data here: [Raw Data](https://github.com/zvance1/Zach_DATA606/tree/main/RawData)
 
 Cleaned Data: [Cleaned Data Sets](https://github.com/zvance1/Zach_DATA606/tree/main/CleanedData)
 
-My unit of analysis will be individual homes.  Again, targeting Anne Arundel, Harford, Baltimore, and Howard counties for historical anlysis and future predictions.
+The unit of analysis is individual homes.  Again, targeting Anne Arundel, Harford, Baltimore, and Howard counties for historical anlysis and future predictions.
 
 ### Questions to be Answered
 
