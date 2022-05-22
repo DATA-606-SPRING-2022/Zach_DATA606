@@ -80,7 +80,13 @@ From the above chart we can easily see that Howard county is the most expensive,
 
 From the above chart we can easily see the upward trend in the cost of house prices over the years.  We see again the same ordering of price levels of the 4 counties and increases at similar rates.  Home prices look to have peaked in 2021 and have so far leveled off or decreased slightly so far into 2022.
 
-![medianPricePerWaterfrontPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontPerCounty.png?raw=true)
+![medianPricePerWaterfrontAnneArundel](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontAnneArundel.png?raw=true)
+
+![medianPricePerWaterfrontBaltimore](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontBaltimore.png?raw=true)
+
+![medianPricePerWaterfrontHarford](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontHarford.png?raw=true)
+
+![medianPricePerWaterfrontHoward](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerWaterfrontHoward.png?raw=true)
 
 Looking at the above chart, it is clear that Anne Arundel County waterfront homes look to have increased pretty dramatically from 2019 to 2021.  When looking at 2022, I would engourage to see it as valuable information but at the same time not to the same extent as the other years as there is not as much data for it only two months into the year (Howard hasn't had any waterfront home sales yet this year).  In Anne Arundel county, the price difference between the medians of waterfront and non waterfront is also pretty significant with the median for non waterfront being down around 400k and waterfront up over 1 million.  The cheapest is non waterfront in Baltimore county, and the difference between waterfront and non waterfront in Baltimore county is not as significant.  Waterfront is consistently more expensive than non waterfront in all of the counties, but to different degrees.
 
@@ -88,7 +94,13 @@ Looking at the above chart, it is clear that Anne Arundel County waterfront home
 
 In the above chart we see that there has been a slight downward trend in the size of new construction lots, more steadily for Anne Arundel and Baltimore counties.  The median in those counties has stayed in the 0.2 acre range, and that is already really small so it makes sense that the downward trend has only been slight - it is tough to get much smaller than that.  Interestingly, Howard, which we saw as the most expensive, and Harford, which we saw as the least expensive alongside Baltimore County look to have their new construction lot sizes be slightly larger, and the downward trend is not as clear or evident for those counties.  Howard and Harford counties have more land, so it will be interesting to see where the price difference between the two comes from whether it be mainly rooted in location or if homes in Howard tend to be larger than that of Harford.  For Howard, in 2022, there have only been 5 new construction home sales, 3 of which were 1 acre lots, the other 2 being 0.14 and 0.24 acres, so I'd expect that as we get further into 2022 that number come down.  Harford and Howard also have a lesser volume of homes than Anne Arundel and Baltimore counties, making their numbers less consistent.
 
-![medianPricePerNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionPerCounty.png?raw=true)
+![medianPricePerNewConstructionAnneArundel](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionAnneArundel.png?raw=true)
+
+![medianPricePerNewConstructionBaltimore](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionBaltimore.png?raw=true)
+
+![medianPricePerNewConstructionHarford](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionHarford.png?raw=true)
+
+![medianPricePerNewConstructionHoward](https://github.com/zvance1/Zach_DATA606/blob/main/Images/medianPricePerNewConstructionHoward.png?raw=true)
 
 Here we see that new construction is consistently more expensive than non new construction in each and every county, to different degrees in each county.  Again Baltimore, non new construction shows as the cheapest option and we see Howard new construction as the most expensive option.  This is consistent with the overall average prices we saw per county earlier in the analysis and the same general increase in prices across the board.
 
