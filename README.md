@@ -112,6 +112,22 @@ Comparatively, the count of new construction homes looks to be favored in Anne A
 
 Looking at the above figure we see that the housing market had become much more of a sellers market as of recently.  Up until 2020 homes were selling for under their list price, then with markets becoming more competitive in 2020 with the development of the COVID-19 pandemic, residential homes have been selling at or above their list price.  This can imply that home price is dependent on more than just the features of the house - it depends on world events and market fluctuation.  So far into 2022 the average differenc ehas come down in 3 of the 4 counties, only going up in Harford.
 
+![countOfNewConstructionPerCounty](https://github.com/zvance1/Zach_DATA606/blob/main/Images/countOfNewConstructionPerCounty.png?raw=true)
+
+Comparatively, the count of new construction homes looks to be favored in Anne Arundel - it has the most new construction homes and the counts of new construction there have increased over the years.  The least amount is between Harford and Howard.  New construction decreased slightly across the board in 2021 in the midst of the COVID-19 pandemic and has consistently decreased gradually in Howard county.  2022 is low again because it is not a full years worth of data.
+
+![countOfWaterfrontPerCountyOverTime](https://github.com/zvance1/Zach_DATA606/blob/main/Images/countOfWaterfrontPerCountyOverTime.png?raw=true)
+
+From the above graphic it is clear that Anne Arundel county has way more waterfront homes than any of the other counties.  Baltimore is the next closest, Harford has a few but not many and Howard doesn't have much at all.  Interestingly, with Howard being the priciest county, the high prices in that region must not be coming from the waterfront feature and from somewhere else.
+
+![countOfNonWaterfrontPerCountyOverTime](https://github.com/zvance1/Zach_DATA606/blob/main/Images/countOfNonWaterfrontPerCountyOverTime.png?raw=true)
+
+The count of non waterfront homes has stayed pretty consistent over the years across all the counties.  With Anne Arundel and Baltimore having the most.  Anne Arundel is the largest county of the 4 and Baltimore is probably the most densely populated.
+
+![correlationMatrix](https://github.com/zvance1/Zach_DATA606/blob/main/Images/correlationMatrix.png?raw=true)
+
+In the above correlation matrix there are a few things to note.  First, obviously there is a strong correlation between the prices - original, list, and sold prices.  They are all similar and tend to change with each other which makes sense, the higher the list price, the higher the sold price.  The sold price will be what we are trying to predict, and clearly the original and list prices help get us closer to the sold price.  However, it'd be good to be able to predict the price based on soley the home's features rather than using its original or list price as an indicator.  Another couple things that are highly correlated are the interior square feet to the above grade square feet, and below grade square feet to interior square feet.  The interior square feet is the sum of the below and above grade square feet and thus it makes sense that these are highly coordinated.  With that, in my machine learning analysis it will be best to use either the combination of above and below grade or just the interior square feet so that there is not using highly correlated information that is repetitive to the algorithms.  The main concern here is about is how things are correlated to the sold price since that is what we'd like to predict.  With that, we see that the features the highest correlated to sold price are the number of full baths, number of bedrooms and the number of half bathrooms and so I'd expect that those are some of the most important predictors for the machine learning algorithms to use.
+
 
 ### Machine Learning Analysis
 
